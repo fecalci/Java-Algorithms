@@ -102,7 +102,7 @@ public class Fruta {
 
     @Override
     public String toString() {
-        return id + ": " + nombre + " de color" + color + " con una cascara " + tipoCascara + " " + esComestible + ", es comestible"  + " y tiene " + calorias + " calorias";
+        return id + ": " + nombre + " de color " + color + " con una cascara " + tipoCascara + ", " + esComestible + " es comestible"  + " y tiene " + calorias + " calorias";
     }
     
     
