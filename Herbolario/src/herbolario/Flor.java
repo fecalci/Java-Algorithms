@@ -1,5 +1,7 @@
 package herbolario;
 
+import java.util.Scanner;
+
 public class Flor extends Planta {
 
     private String color_petalo, color_pistilo, variedad,estacion;
@@ -15,6 +17,49 @@ public class Flor extends Planta {
         this.estacion = estacion;
         this.cant_petalos = cant_petalos;
     }
+    
+    
+    public Flor inputData(){
+        
+        Flor f;
+        
+        Scanner lector = new Scanner(System.in);
+    
+        System.out.println("Ingrese el nombre de la flor");
+        String nombre = lector.next();
+
+        System.out.println("Ingrese si tiene hojas SI/NO");
+        String tieneHojas = lector.next();                        
+
+        System.out.println("Ingrese el clima ideal");
+        String clima_ideal = lector.next();
+
+        System.out.println("Ingrese el alto del tallo");
+        float alto_tallo = lector.nextFloat();
+
+        System.out.println("Ingrese el color del pétalo");
+        String color_petalo = lector.next();
+
+        System.out.println("Ingrese el color del pistillo");
+        String color_pistilo = lector.next();
+
+        System.out.println("Ingrese la cantidad de petalos");
+        int cant_petalos = lector.nextInt();                          
+
+        System.out.println("Ingrese la variedad");
+        String variedad = lector.next();
+
+        System.out.println("Ingrese la estacion a la que pertenece");
+        String estacion = lector.next();      
+
+        f = new Flor(color_petalo, color_pistilo, variedad, estacion, cant_petalos, nombre, tieneHojas, clima_ideal, alto_tallo);   
+        
+        return f;
+    
+    }
+    
+    
+    
 
     public String getColor_petalo() {
         return color_petalo;
@@ -58,8 +103,29 @@ public class Flor extends Planta {
 
     @Override
     public String toString() {
-        return super.toString()+ "Flor{" + "color_petalo=" + color_petalo + ", color_pistilo=" + color_pistilo + ", variedad=" + variedad + ", estacion=" + estacion + ", cant_petalos=" + cant_petalos + '}';
+        return "Flor " + "id: " + super.id + ", "+ super.toString() + " con petalos color " + color_petalo + ", pistillos color " + color_pistilo + " de variedad " + variedad + " perteneciente a estación " + estacion + " y con una cantidad de pétalos de " + cant_petalos;
     }
+
+    @Override
+    public void saludar() {
+        System.out.println("Hola soy una flor");
+    }
+
+    @Override
+    public String queSoy() {
+        return "Flor";
+    }
+    
+    public void meRegalan(){
+        System.out.println("Soy una flor y me regalan a menudo");
+    }
+
+    @Override
+    public void soyVenenoso() {
+        System.out.println("Soy una flor y no soy venenosa");
+    }
+    
+    
     
     
     

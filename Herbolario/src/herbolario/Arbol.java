@@ -1,5 +1,7 @@
 package herbolario;
 
+import java.util.Scanner;
+
 public class Arbol extends Planta {
     
     String variedad, tipo_tronco, color, tipo_hojas;
@@ -15,6 +17,47 @@ public class Arbol extends Planta {
         this.tipo_hojas = tipo_hojas;
         this.radio_tronco = radio_tronco;
     }
+    
+    public Arbol inputData(){
+        
+        Arbol bol;
+        
+        Scanner lector = new Scanner(System.in);
+        
+        System.out.println("Ingrese el nombre del arbol");
+        String nombre = lector.next();
+
+        System.out.println("Ingrese si tiene hojas SI/NO");
+        String tieneHojas = lector.next();                        
+
+        System.out.println("Ingrese el clima ideal");
+        String clima_ideal = lector.next();
+
+        System.out.println("Ingrese el alto del tallo");
+        float alto_tallo = lector.nextFloat();
+
+        System.out.println("Ingrese el color del arbol");
+        String color = lector.next();
+
+        System.out.println("Ingrese el tipo de tronco");
+        String tipo_tronco = lector.next();
+
+        System.out.println("Ingrese el radio del tronco");
+        float radio_tronco = lector.nextFloat();
+
+        System.out.println("Ingrese el tipo de hojas");
+        String tipo_hojas = lector.next();                          
+
+        System.out.println("Ingrese la variedad");
+        String variedad = lector.next();
+
+        bol = new Arbol(variedad, tipo_tronco, color, tipo_hojas, radio_tronco, nombre, tieneHojas, clima_ideal, alto_tallo); 
+        
+        return bol;
+        
+    }
+    
+    
 
     public String getVariedad() {
         return variedad;
@@ -59,8 +102,27 @@ public class Arbol extends Planta {
     
     @Override
     public String toString() {
-        return super.toString() + "Arbol{" + "variedad=" + variedad + ", tipo_tronco=" + tipo_tronco + ", color=" + color + ", tipo_hojas=" + tipo_hojas + ", radio_tronco=" + radio_tronco + '}';
+        return "Arbol" + " id: " + super.id + ", "+ super.toString() + " de variedad " + variedad + " con tipo de tronco " + tipo_tronco + ", color " + color + " tiene hojas " + tipo_hojas + " y el radio del tronco es " + radio_tronco;
     }
+
+    @Override
+    public void saludar() {
+        System.out.println("Hola soy un arbol");
+    }
+
+    @Override
+    public String queSoy() {
+        return "Arbol";
+    }
+
+    @Override
+    public void soyVenenoso() {
+        System.out.println("Soy un arbol y no soy venenoso");
+    }
+    
+    
+    
+    
     
     
 }

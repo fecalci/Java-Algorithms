@@ -1,11 +1,9 @@
 package herbolario;
 
-public class Arbusto extends Planta {
-    /*
-    Arbusto: Ancho arbusto, esDomestico, variedad arbusto,
-color de hojas, sePodaONo
-    */
-    
+import java.util.Scanner;
+
+    public class Arbusto extends Planta {
+
     private String esDomestico, variedad, color_hojas, sePodaONo;
     private float Ancho;
     
@@ -20,6 +18,50 @@ color de hojas, sePodaONo
         this.sePodaONo = sePodaONo;
         this.Ancho = Ancho;
     }
+    
+    
+    public Arbusto inputData(){
+        
+            Arbusto a;
+            
+            Scanner lector = new Scanner(System.in);
+            
+            System.out.println("Ingrese el nombre del arbusto");
+            String nombre = lector.next();
+
+            System.out.println("Ingrese si tiene hojas SI/NO");
+            String tieneHojas = lector.next();
+
+            if(tieneHojas.equalsIgnoreCase("Si")){
+                System.out.println("Ingrese el color de las hojas"); 
+                color_hojas = lector.next();
+            }
+            else{
+                color_hojas = "-";
+            }
+
+            System.out.println("Ingrese el clima ideal");
+            String clima_ideal = lector.next();
+
+            System.out.println("Ingrese el alto del tallo");
+            float alto_tallo = lector.nextFloat();
+
+            System.out.println("Ingrese si es doméstico SI/NO");
+            esDomestico = lector.next();
+
+            System.out.println("Ingrese la variedad");
+            variedad = lector.next();
+
+            System.out.println("Ingrese si se poda o no SI/NO");
+            sePodaONo = lector.next();
+
+            System.out.println("Ingrese el ancho del arbusto");
+            Ancho = lector.nextFloat();
+
+            a = new Arbusto(esDomestico,variedad, color_hojas, sePodaONo, Ancho, nombre, tieneHojas, clima_ideal, alto_tallo);
+     
+            return a;
+    }    
 
       
 
@@ -65,8 +107,32 @@ color de hojas, sePodaONo
 
     @Override
     public String toString() {
-        return super.toString() + "Arbusto{" + "esDomestico=" + esDomestico + ", variedad=" + variedad + ", color_hojas=" + color_hojas + ", sePodaONo=" + sePodaONo + ", Ancho=" + Ancho + '}';
+        return "Arbusto " + "id: " + ", " +super.id + " " + super.toString() + " "+  esDomestico + " es doméstico, " +"de variedad " + variedad + " con hojas color " + color_hojas  + " "+ sePodaONo+  " se poda y tiene un ancho de " + Ancho;
     }
+
+    
+    @Override
+    public void saludar() {
+        System.out.println("Hola soy un arbusto");
+    }
+
+    @Override
+    public String queSoy() {
+        return "Arbusto";
+    }
+    
+    public void doyFrutos(){
+        System.out.println("Soy un arbusto y doy frutos");
+    }
+
+    @Override
+    public void soyVenenoso() {
+        System.out.println("Soy un arbusto y soy venenoso");
+    }
+    
+    
+    
+    
     
     
     

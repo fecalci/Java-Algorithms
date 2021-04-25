@@ -55,8 +55,14 @@ constructores correspondientes)
 
     @Override
     public String toString() {
-        return "Planta{" + "nombre=" + nombre + ", tieneHojas=" + tieneHojas + ", clima_ideal=" + clima_ideal + ", alto_tallo=" + alto_tallo + ", id=" + id + '}';
+        return "se llama " +nombre + ", "+ tieneHojas +  " tieneHojas,"+  " su clima ideal es " + clima_ideal + ", el alto del tallo es " + alto_tallo;
     }
+    
+    public abstract void saludar();
+    
+    public abstract String queSoy();
+    
+    public abstract void soyVenenoso();
     
     
 }
