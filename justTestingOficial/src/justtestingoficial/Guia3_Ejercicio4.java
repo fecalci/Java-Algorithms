@@ -18,7 +18,7 @@ public class Guia3_Ejercicio4{
         String oracion_separada [] = oracion.split(" ");
         
         for(int i = 0;i<oracion_separada.length;i++){
-            if(oracion_separada[i].equals(palabra)){
+            if(oracion_separada[i].equalsIgnoreCase(palabra)){
                 aparicion = aparicion + 1;
             }
         }

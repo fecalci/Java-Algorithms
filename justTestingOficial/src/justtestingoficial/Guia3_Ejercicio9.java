@@ -27,12 +27,12 @@ public class Guia3_Ejercicio9{
                 
                 if(j==3){
                     promedio = suma/3;
-                    matriz[j][i] = promedio;
+                    matriz[i][j] = promedio;
                 }
                 else{
                 System.out.println("Ingrese la nota "+(j+1)+ " del alumno "+ (i+1));
                 fila = lector.nextDouble();
-                matriz[j][i] = fila;
+                matriz[i][j] = fila;
                 suma = suma + fila;                
                 }
             }

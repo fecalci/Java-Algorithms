@@ -8,7 +8,8 @@ public class Ejercicio2 {
         2. Leer tres valores numéricos enteros, indicar cual es el mayor, cual
         es el del medio y cual el menor. Considerar que los tres valores son
         diferentes.
-        *//*
+        */
+        /*
         int mayor = 0;
         int menor = 0;
         int medio = 0;
@@ -55,7 +56,7 @@ public class Ejercicio2 {
         System.out.println("El mayor es:" + mayor);
         System.out.println("El medio es:" + medio);
         System.out.println("El menor es:" + menor);
-        }    */ 
+        }  */  
     
     String sexo="M";  
     char new_sexo =sexo.charAt(0);

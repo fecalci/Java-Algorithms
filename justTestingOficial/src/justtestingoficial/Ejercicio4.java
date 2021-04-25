@@ -10,7 +10,9 @@ public class Ejercicio4 {
         par o impar. Para indicar el final se ingresará un valor cero o
         negativo.
         */
-        int num = 7;
+        System.out.println("Ingrese un número");
+        Scanner lector = new Scanner (System.in);
+        int num = lector.nextInt();
         if (num%2 == 0){
             System.out.println("El número ingresado es par");
         } 
