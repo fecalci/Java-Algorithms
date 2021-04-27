@@ -1,4 +1,3 @@
-
 package automotriz;
 
 public interface Chico {

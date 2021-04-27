@@ -5,10 +5,9 @@ public class Arreglo {
     
     int indice = 0;
     Mueble [] arre;
-    int tamaño;
     
-    public Arreglo(int tamaño) {       
-        arre = new Mueble[tamaño];
+    public Arreglo() {       
+        arre = new Mueble[10];
     
     }       
     public String cargarDatos(Mueble m){   
@@ -16,8 +15,9 @@ public class Arreglo {
             arre[indice] = m;
             arre[indice].id = indice+1;
             indice++;
+            return "Mueble cargado correctamente";
            }            
-        return "Mueble cargado correctamente";                
+        return "No queda espacio para muebles  :(";                
     } 
     
     public void mostrarDatos(){
@@ -27,16 +27,17 @@ public class Arreglo {
             System.out.println(arre[i].toString());          
         }     
     }    
-    public void cambiarMadera(int id_m){
+    public String cambiarMadera(int id_m){
         
         for(int i= 0;i<indice;i++){
             if(id_m == arre[i].id){
                 arre[i].setMaterial("Madera");
                 System.out.println(arre[i]);
+                return "El mueble fue modicado correctamente";
+                
             }
-            
-        
         }
+        return "El mueble con ese ID no existe";
         
     }        
 }

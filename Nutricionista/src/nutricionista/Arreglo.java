@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class Arreglo {
 
     Fruta [] arre;
-    int tamaño;
     int indice = 0;
     Fruta f = new Fruta(" "," "," ",0," ");
     
     
-    public Arreglo(int tamaño) {
+    public Arreglo() {
         
-        arre = new Fruta[tamaño];
+        arre = new Fruta[10];
         
     }
     

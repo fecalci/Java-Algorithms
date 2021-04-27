@@ -35,17 +35,6 @@ public class Auto extends Vehiculo implements Grande {
         return "Vehículo tipo " + "Auto " + super.toString() + "asientos de " + materialAsientos + " y" + cantidadCaballos + " caballos de fuerza";
     }
 
-    @Override
-    public String tipo() {
-        return "Auto";
-    }
-    
-
-    @Override
-    public String esAptoDiscapacitado() {
-        return "No";
-    }
-
     
     public void Estacionar(){
         System.out.println("Soy un auto y me puedo estacionar");
@@ -60,9 +49,13 @@ public class Auto extends Vehiculo implements Grande {
         this.transportoAMuchasPersonas();
     }
     
-    public int cilindrada(){
-        return 0;
-    };
+
+    @Override
+    public void soyVehiculo() {
+        System.out.println("Hola soy un auto y paseo por la ciudad");
+    }
+    
+    
 
     
     

@@ -61,7 +61,7 @@ public class Arreglo {
         for (int i = 0; i< indice; i++){
             arre[i].queSoy();
         }
-        
+    
     }        
         
  }

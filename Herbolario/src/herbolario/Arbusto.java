@@ -2,7 +2,7 @@ package herbolario;
 
 import java.util.Scanner;
 
-    public class Arbusto extends Planta {
+    public class Arbusto extends Planta implements soyVenenoso {
 
     private String esDomestico, variedad, color_hojas, sePodaONo;
     private float Ancho;
@@ -120,20 +120,12 @@ import java.util.Scanner;
     public String queSoy() {
         return "Arbusto";
     }
-    
-    public void doyFrutos(){
-        System.out.println("Soy un arbusto y doy frutos");
-    }
 
     @Override
     public void soyVenenoso() {
-        System.out.println("Soy un arbusto y soy venenoso");
+        System.out.println("Soy un arbusto y soy venenoso!");
     }
-    
-    
-    
-    
-    
+                    
     
     
 }

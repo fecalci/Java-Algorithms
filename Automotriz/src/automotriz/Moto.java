@@ -35,17 +35,6 @@ public class Moto extends Vehiculo implements Chico {
         return "Vehículo tipo " + "Moto " + super.toString() + " cilindrada " + cilindrada + " y manubrio de " + materialManubrio;
     }
     
-  
-    @Override
-    public String tipo() {
-        return "Moto";
-    }    
-    
-    @Override
-    public String esAptoDiscapacitado() {
-        return "No";
-    }
-    
     
     @Override
     public void Estacionar() {
@@ -61,9 +50,12 @@ public class Moto extends Vehiculo implements Chico {
         this.Estacionar();
         this.viajaUnaPersona();
     }    
-    
-    public int cilindrada(){
-        return this.getCilindrada();
+
+    @Override
+    public void soyVehiculo() {
+        System.out.println("Hola soy una moto y solo tengo una rueda");
     }
+ 
+    
     
 }

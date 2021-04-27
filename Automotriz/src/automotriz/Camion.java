@@ -34,18 +34,7 @@ public class Camion extends Vehiculo implements Grande{
         return "Vehículo tipo " + "Camion " + super.toString() + tieneAcoplado + " tiene acoplado" + " y tiene " + cantidadEjes + " ejes";
     }
     
-    
-    @Override
-    public String tipo() {
-        return "Camion";
-    }    
-    
-
-    @Override
-    public String esAptoDiscapacitado() {
-        return "No";
-    }    
-    
+   
     
     @Override
     public void Estacionar() {
@@ -62,9 +51,12 @@ public class Camion extends Vehiculo implements Grande{
     }    
     
 
-    public int cilindrada(){
-        return 0;
-    };    
+    @Override
+    public void soyVehiculo() {
+        System.out.println("Hola soy un camión y hago viajes largos");
+    }
+    
+    
     
     
     

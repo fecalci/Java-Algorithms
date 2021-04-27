@@ -62,7 +62,7 @@ constructores correspondientes)
     
     public abstract String queSoy();
     
-    public abstract void soyVenenoso();
+    //public abstract void soyVenenoso();
     
     
 }

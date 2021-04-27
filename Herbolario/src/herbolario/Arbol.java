@@ -2,10 +2,10 @@ package herbolario;
 
 import java.util.Scanner;
 
-public class Arbol extends Planta {
+public class Arbol extends Planta implements doyFrutos {
     
-    String variedad, tipo_tronco, color, tipo_hojas;
-    float radio_tronco;
+    private String variedad, tipo_tronco, color, tipo_hojas;
+    private float radio_tronco;
     
     public Arbol(){}
 
@@ -116,9 +116,11 @@ public class Arbol extends Planta {
     }
 
     @Override
-    public void soyVenenoso() {
-        System.out.println("Soy un arbol y no soy venenoso");
+    public void doyFrutos() {
+        System.out.println("Soy un arbol y doy frutos");
     }
+    
+    
     
     
     

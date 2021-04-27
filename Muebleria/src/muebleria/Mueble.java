@@ -73,7 +73,7 @@ public class Mueble {
 
     @Override
     public String toString() {
-        return "Mueble{" + "nombre=" + nombre + ", material=" + material + ", alto=" + alto + ", ancho=" + ancho + ", cantidad=" + cantidad + ", id=" + id + '}';
+        return "Mueble id " +id + " llamado " + nombre + " hecho de " + material + " con una altura de " + alto + ", ancho de " + ancho + "y con stock de " + cantidad;
     }
 
 

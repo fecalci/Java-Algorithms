@@ -43,18 +43,8 @@ public class Colectivo extends Vehiculo implements Grande {
     @Override
     public String toString() {
         return "Vehículo tipo " + "Colectivo " + super.toString() + aptoDiscapacitados + " es apto discapacitados, " + poseeLectorSube + " posee lector sube " + "y es un colectivo tipo " + tipoColectivo;
-    }
-    
-    
-    @Override
-    public String tipo() {
-        return "Colectivo";
-    }    
+    }  
 
-    @Override
-    public String esAptoDiscapacitado() {
-        return aptoDiscapacitados;
-    }
     
     
     @Override
@@ -72,9 +62,14 @@ public class Colectivo extends Vehiculo implements Grande {
     }    
     
     
-    public int cilindrada(){
-        return 0;
-    };    
+
+    @Override
+    public void soyVehiculo() {
+        System.out.println("Hola soy un colectivo y trasporto muchas personas");
+    }
+    
+    
+    
     
     
     

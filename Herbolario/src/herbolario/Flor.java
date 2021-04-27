@@ -2,7 +2,7 @@ package herbolario;
 
 import java.util.Scanner;
 
-public class Flor extends Planta {
+public class Flor extends Planta implements meRegalan{
 
     private String color_petalo, color_pistilo, variedad,estacion;
     private int cant_petalos;
@@ -118,11 +118,6 @@ public class Flor extends Planta {
     
     public void meRegalan(){
         System.out.println("Soy una flor y me regalan a menudo");
-    }
-
-    @Override
-    public void soyVenenoso() {
-        System.out.println("Soy una flor y no soy venenosa");
     }
     
     

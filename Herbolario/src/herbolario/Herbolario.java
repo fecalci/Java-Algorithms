@@ -57,10 +57,10 @@ public class Herbolario {
                         
                     default:
                         System.out.println("El número de planta ingresado es incorrecto");
-                        break;
-                   
+                        break;                   
                     
                 }
+                break;                
                 
             case 2:
                 arre.mostrarPlantas();

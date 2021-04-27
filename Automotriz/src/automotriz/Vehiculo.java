@@ -1,4 +1,3 @@
-
 package automotriz;
 
 
@@ -83,14 +82,7 @@ public abstract class Vehiculo {
     }
     
     
-    public abstract String tipo();
-    
-    public abstract String esAptoDiscapacitado();
-    
-    public abstract void queHacen();   
-    
-    public abstract int cilindrada();
-    
-    
+    public abstract void soyVehiculo();     
+           
     
 }

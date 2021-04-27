@@ -13,6 +13,7 @@ public class Automotriz {
         int numChasis,cantAsientos, cantidadCaballos, cilindrada,cantidadEjes;
         String color, marca, modelo ,patente, motor, materialAsientos, materialManubrio,aptoDiscapacitados,
                poseeLectorSube, tipoColectivo,tieneAcoplado;
+        char opc;
         
         
         Arreglo arre = new Arreglo();
@@ -31,7 +32,7 @@ public class Automotriz {
         System.out.println("Presione 4 para saber qué colectivos son aptos para personas con discapacidad");
         System.out.println("Presione 5 para mostrar la marca/cilindrada de un auto/moto dado un id");
         System.out.println("Presione 6 para saber que hace cáda vehículo ingresado");
-        System.out.println("Presione 0 para finalizar");
+        //System.out.println("Presione 0 para finalizar");
         opcion = lector.nextInt();
         
         switch(opcion){
@@ -219,14 +220,11 @@ public class Automotriz {
                 }
         
             
+        System.out.println("Desea Continuar en el programa s/n");
+        String letra = lector.next();
+        opc = letra.charAt(0);
         
-        
-           
-            
-        }
-        
-        
-        while(opcion != 0);
+    }while(opc =='s' || opc=='S');
         
     }
     
