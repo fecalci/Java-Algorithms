@@ -82,7 +82,9 @@ public abstract class Vehiculo {
     }
     
     
-    public abstract void soyVehiculo();     
+    public abstract void soyVehiculo();   
+    
+    public abstract void queHago();
            
     
 }

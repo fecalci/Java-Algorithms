@@ -120,6 +120,10 @@ public class Flor extends Planta implements meRegalan{
         System.out.println("Soy una flor y me regalan a menudo");
     }
     
+    public void queHacen(){
+        this.meRegalan();
+    }
+    
     
     
     

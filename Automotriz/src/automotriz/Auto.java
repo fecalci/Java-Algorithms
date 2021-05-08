@@ -43,11 +43,15 @@ public class Auto extends Vehiculo implements Grande {
     public void transportoAMuchasPersonas(){
         System.out.println("Soy un auto y puedo transportar a muchas personas");
     }
-    
-    public void queHacen(){
-        this.Estacionar();
+
+    @Override
+    public void queHago() {
         this.transportoAMuchasPersonas();
+    
+        this.Estacionar();
     }
+    
+
     
 
     @Override

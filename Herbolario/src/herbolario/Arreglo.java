@@ -55,6 +55,11 @@ public class Arreglo {
         
     }
     
+    public void queHacen(){
+        for(int i = 0;i<indice;i++){
+            arre[i].queHacen();
+        }
+    }
     
     public void queSoy(){
         

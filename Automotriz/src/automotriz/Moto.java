@@ -44,12 +44,16 @@ public class Moto extends Vehiculo implements Chico {
     public void viajaUnaPersona(){
         System.out.println("Soy una moto y solo pueden viajar 2 personas");
     }
-    
-    
-    public void queHacen(){
-        this.Estacionar();
+
+    @Override
+    public void queHago() {
         this.viajaUnaPersona();
-    }    
+    
+        this.Estacionar();
+    }
+    
+    
+
 
     @Override
     public void soyVehiculo() {

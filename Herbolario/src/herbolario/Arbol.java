@@ -119,6 +119,12 @@ public class Arbol extends Planta implements doyFrutos {
     public void doyFrutos() {
         System.out.println("Soy un arbol y doy frutos");
     }
+
+    @Override
+    public void queHacen() {
+        this.doyFrutos();
+    }
+    
     
     
     

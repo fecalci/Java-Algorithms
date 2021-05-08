@@ -23,6 +23,7 @@ public class Herbolario {
         System.out.println("Ingrese 2 para mostrar todas las plantas ingresadas");
         System.out.println("Ingrese 3 para modificar una planta ingresada");
         System.out.println("Ingrese 4 para saludar a las plantas");
+        System.out.println("Ingrese 5 para ver qué hacen las plantas");
         System.out.println("Ingrese 0 para finalizar");
         opcion = lector.nextInt();
         
@@ -90,6 +91,9 @@ public class Herbolario {
             case 4:
                 arre.saludar();
                 break;
+                
+            case 5:
+                arre.queHacen();
             
         }
             

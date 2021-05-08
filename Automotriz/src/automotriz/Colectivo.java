@@ -55,11 +55,14 @@ public class Colectivo extends Vehiculo implements Grande {
     public void transportoAMuchasPersonas(){
         System.out.println("Soy un colectivo y transporto a muchas personas");
     }
-  
-    public void queHacen(){
-        this.Estacionar();
+
+    @Override 
+    public void queHago() {
         this.transportoAMuchasPersonas();
-    }    
+    
+        this.Estacionar();
+    }
+  
     
     
 

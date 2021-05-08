@@ -45,10 +45,15 @@ public class Camion extends Vehiculo implements Grande{
         System.out.println("Soy un camión y transporto a muchas personas");
     }
     
-    public void queHacen(){
-        this.Estacionar();
+    @Override
+    public void queHago() {
         this.transportoAMuchasPersonas();
-    }    
+        this.Estacionar();
+    }
+    
+
+    
+    
     
 
     @Override

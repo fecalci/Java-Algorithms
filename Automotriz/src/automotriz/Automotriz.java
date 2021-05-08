@@ -31,7 +31,8 @@ public class Automotriz {
         System.out.println("Presione 3 para modificar la patente de un vehículo");
         System.out.println("Presione 4 para saber qué colectivos son aptos para personas con discapacidad");
         System.out.println("Presione 5 para mostrar la marca/cilindrada de un auto/moto dado un id");
-        System.out.println("Presione 6 para saber que hace cáda vehículo ingresado");
+        System.out.println("Presione 6 para saber la característica de cáda vehículo ingresado");
+        System.out.println("Presione 7 para saber que hace cada vehículo ingresado");
         //System.out.println("Presione 0 para finalizar");
         opcion = lector.nextInt();
         
@@ -213,6 +214,10 @@ public class Automotriz {
                 
             case 6:
                 arre.queHacen();            
+                break;
+                
+            case 7:
+                arre.queHacenn();
                 break;
                 
             default:

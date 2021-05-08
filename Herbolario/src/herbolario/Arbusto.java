@@ -125,6 +125,13 @@ import java.util.Scanner;
     public void soyVenenoso() {
         System.out.println("Soy un arbusto y soy venenoso!");
     }
+
+    @Override
+    public void queHacen() {
+        this.soyVenenoso();
+    }
+    
+    
                     
     
     

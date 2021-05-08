@@ -89,6 +89,15 @@ public class Arreglo {
         }
         
     }
+    
+    public void queHacenn(){
+        
+        for (int i = 0; i< indice; i++){
+            System.out.println("VEHICULO ID: "+arre[i].id);
+            arre[i].queHago();
+        }
+        
+    }    
         
         
     }
